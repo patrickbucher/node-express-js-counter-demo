@@ -65,4 +65,4 @@ Für diese Anpassung müssen Sie Änderungen an mehreren Dateien vornehmen:
 - `static/client.js`: Auslesen und Übertragen des eingestellten Wertes an den Server
 - `app.js`: serverseitige Verarbeitung des Werts
 
-Ein einfacher Lösungsansatz ist es, den Wert als _Query Parameter_, d.h. mit der URL mitzugeben (z.B. `http://localhost:8000/increment?value=7`). Serverseitig können Sie dann prüfen, ob der _Request_ (Variable `req`) über einen entsprechenden Wert verfügt.
+Ein einfacher Lösungsansatz ist es, den Wert als _Query Parameter_, d.h. mit der URL mitzugeben (z.B. `http://localhost:8000/increment?value=7`). Serverseitig können Sie dann prüfen, ob der _Request_ (Variable `req`) über einen entsprechenden Wert verfügt (Tipp: verwenden Sie `console.log()` um `req.query` auszugeben).
